@@ -47,6 +47,7 @@ const selectLi = (event) => {
 };
 
 const closeImg = (event) => {
+  event.preventDefault();
   if (event.code === "Space") {
     instance.close();
     ul.removeEventListener("keydown", closeImg);
