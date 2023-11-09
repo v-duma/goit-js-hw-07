@@ -3,7 +3,6 @@ import { galleryItems } from "./gallery-items.js";
 
 const ul = document.querySelector(".gallery");
 
-function createGalleryItems() {
   const items = [];
 
   for (let i = 0; i < galleryItems.length; i++) {
@@ -25,7 +24,7 @@ function createGalleryItems() {
   }
 
   ul.append(...items);
-}
+
 
 function createGallery() {
   const gallery = new SimpleLightbox(".gallery a", {
@@ -34,5 +33,4 @@ function createGallery() {
   });
 }
 
-createGalleryItems();
 createGallery();
